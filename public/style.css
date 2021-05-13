@@ -1,0 +1,144 @@
+/* this file is loaded by index.html and styles the page */
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #434978;
+  color: white;
+}
+
+.cu {
+  background-color: white;
+  border: 0;
+  border-radius: 10%;
+  position: relative;
+  animation-name: botao;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes botao {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.bot {
+  height: 275px;
+  width: 240px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10%;
+  margin-bottom: 35px;
+}
+
+.bola {
+  position: relative;
+  animation-name: avatar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes avatar {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 25px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.square {
+  height: 600px;
+  width: 75%;
+  background-color: #555;
+  color: white;
+  border-radius: 5%;
+  font-size: 25px;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.square img {
+  heigth: 500px;
+  width: 75%;
+}
+
+.square p {
+  font-size: 10px;
+}
+
+.square a {
+  font-size: 10px;
+}
+
+/*h1 {
+  font-weight: bold;
+  color: white;
+  max-width: calc(100% - 5rem);
+  line-height: 1.1;
+}*/
+
+form {
+  background-color: #eee;
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  max-width: 40ch;
+}
+
+input {
+  border: 1px solid silver;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 50%;
+  height: 100%;
+}
+
+form button {
+  background-color: #bbbbf2;
+  border: 2px solid currentColor;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 1.4em;
+  padding: 0.25em 1em;
+  max-width: 20ch;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 1.4em;
+  padding: 0.25em 1em;
+  max-width: 20ch;
+}
+
+form button:hover {
+  background-color: lavender;
+}
+
+footer {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid lightgrey;
+}
+
+header {
+  background-color: black;
+  color: white;
+  margin: -25px -10px;
+}
+
+.header {
+  margin: 50px 10px;
+  text-align: center;
+}

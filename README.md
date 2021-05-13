@@ -1,41 +1,30 @@
+# hello-express
 
-***
-# Boas-vindas á pikelist :D
+A server that serves a webpage, its resources, and some data
 
 
-***
+## Your Project
 
-## API
+On the front-end,
 
-Para usar a api da botlist é necessario usar este url:
-https://www.pikelist.tk/api/bot?id=botid
+- Edit `views/index.html` to change the content of the webpage
+- `public/client.js` is the javacript that runs when you load the webpage
+- `public/style.css` is the styles for `views/index.html`
+- Drag in `assets`, like images or music, to add them to your project
 
-```
-$ npm i node-fetch
-```
+On the back-end,
 
-```js
-const f = require("node-fetch")
+- your app starts at `server.js`
+- add frameworks and packages in `package.json`
+- safely store app secrets in `.env` (nobody can see this but you and people you invite)
 
-f("https://www.pikelist.tk/api/bot?id=id-do-bot", {
-method: "GET",
-}).then(a => a.json()).then(a => api = a[0])
+Click `Show` in the header to see your app live. Updates to your code will instantly deploy.
 
-if (api instanceof Promise) {
-await api.then(a => api = a).catch(x => api = null)
-}
-```
 
-Irá retornar uma [Array](https://www.google.com/url?sa=t&source=web&rct=j&url=https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array&ved=2ahUKEwjMl63lgL_vAhUyILkGHUbnA6QQFjAAegQIBxAC&usg=AOvVaw2uPfR2B4Q1jh7VMw6WoDS4) do bot igual á aseguir
+## Made by [Glitch](https://glitch.com/)
 
-```js
-{
-  avatar: 'url',
-  votes: 14,
-  aproved: true/false,
-  tag: 'Tode#1915',
-  lang: 'js',
-  ownerId: '334740922891894795'
-}
+**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
 
-```
+Find out more [about Glitch](https://glitch.com/about).
+
+( ᵔ ᴥ ᵔ )
